@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust - Your Adventure Awaits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>WanderLust</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#destinations" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="paris.html" class="nav-link">Paris</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#packages" class="nav-link">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Amazing Places</h1>
+            <p class="hero-subtitle">Explore the world with our curated travel experiences</p>
+            <a href="#packages" class="btn btn-primary">Start Your Journey</a>
+        </div>
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2135&q=80')"></div>
+        </div>
+        <div class="slider-nav">
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <div class="search-item">
+                    <label for="destination">Destination</label>
+                    <select id="destination">
+                        <option value="">Choose destination</option>
+                        <option value="paris" data-url="paris.html">Paris, France</option>
+                        <option value="tokyo" data-url="tokyo.html">Tokyo, Japan</option>
+                        <option value="bali" data-url="bali.html">Bali, Indonesia</option>
+                        <option value="santorini" data-url="santorini.html">Santorini, Greece</option>
+                        <option value="dubai" data-url="dubai.html">Dubai, UAE</option>
+                    </select>
+                </div>
+                <div class="search-item">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin">
+                </div>
+                <div class="search-item">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout">
+                </div>
+                <div class="search-item">
+                    <label for="guests">Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4+ Guests</option>
+                    </select>
+                </div>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <p class="section-subtitle">Discover our most loved travel destinations</p>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80" alt="Paris">
+                        <div class="destination-overlay">
+                            <h3>Paris</h3>
+                            <p>City of Love</p>
+                            <a href="paris.html" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Santorini">
+                        <div class="destination-overlay">
+                            <h3>Santorini</h3>
+                            <p>Greek Paradise</p>
+                            <a href="santorini.html" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2088&q=80" alt="Tokyo">
+                        <div class="destination-overlay">
+                            <h3>Tokyo</h3>
+                            <p>Modern Metropolis</p>
+                            <a href="tokyo.html" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Bali">
+                        <div class="destination-overlay">
+                            <h3>Bali</h3>
+                            <p>Tropical Paradise</p>
+                            <a href="bali.html" class="btn btn-secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2 class="section-title">Travel Packages</h2>
+            <p class="section-subtitle">Choose from our amazing travel packages</p>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80" alt="Beach Paradise">
+                        <div class="package-price">$1,299</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Beach Paradise</h3>
+                        <p>7 days in tropical paradise with luxury accommodation</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-plane"></i> Round-trip flights</li>
+                            <li><i class="fas fa-hotel"></i> 5-star resort</li>
+                            <li><i class="fas fa-utensils"></i> All meals included</li>
+                            <li><i class="fas fa-swimmer"></i> Water activities</li>
+                        </ul>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1464822759844-d150baec93f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Mountain Adventure">
+                        <div class="package-price">$899</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Mountain Adventure</h3>
+                        <p>5 days of hiking and exploring breathtaking mountains</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-plane"></i> Round-trip flights</li>
+                            <li><i class="fas fa-mountain"></i> Guided tours</li>
+                            <li><i class="fas fa-campground"></i> Camping experience</li>
+                            <li><i class="fas fa-hiking"></i> Hiking equipment</li>
+                        </ul>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="City Explorer">
+                        <div class="package-price">$1,599</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>City Explorer</h3>
+                        <p>10 days discovering the world's greatest cities</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-plane"></i> Multi-city flights</li>
+                            <li><i class="fas fa-hotel"></i> Premium hotels</li>
+                            <li><i class="fas fa-map-marked-alt"></i> City tours</li>
+                            <li><i class="fas fa-camera"></i> Photo sessions</li>
+                        </ul>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About WanderLust</h2>
+                    <p>We are passionate about creating unforgettable travel experiences. With over 15 years in the industry, we've helped thousands of travelers discover the beauty of our world.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Happy Travelers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Destinations</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2135&q=80" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"Amazing experience! The team at WanderLust made our honeymoon trip absolutely perfect. Every detail was taken care of."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>Honeymooner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Professional service and incredible destinations. I've booked 3 trips with them and each one exceeded my expectations."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Mike Chen">
+                            <div>
+                                <h4>Mike Chen</h4>
+                                <span>Adventure Seeker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Family-friendly packages with activities for everyone. Our kids had the time of their lives, and so did we!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Emily Davis">
+                            <div>
+                                <h4>Emily Davis</h4>
+                                <span>Family Traveler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to start your adventure? Contact us today!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Travel Street, Adventure City, AC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@wanderlust.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WanderLust</h3>
+                    <p>Your gateway to amazing travel experiences around the world.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Oceania</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new destinations and offers.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WanderLust. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
